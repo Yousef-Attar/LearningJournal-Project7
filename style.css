@@ -155,7 +155,7 @@ footer .Copyright{
     font-weight: 400;
 }
 
-@media(min-width:700px){
+@media(min-width:750px){
     .intro span{
         font-size: 1rem;
     }
@@ -194,6 +194,7 @@ footer .Copyright{
     }
     header div a{
     margin-left: 3em;
+    font-size: 1rem;
     }
 }
 
@@ -244,15 +245,16 @@ footer .Copyright{
     font-size: 1rem;
     line-height: 1.4;
 }
-
-/* RECENT BLOG */
 .recent-blog {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2em;
 }
-@media(min-width:700px){
+.recent-blog div img{
+    align-self: flex-start;
+}
+@media(min-width:750px){
    .hero-post{
     padding: 2em;
    }
@@ -260,4 +262,63 @@ footer .Copyright{
     align-self: flex-start;
     max-height: 600px;
    }
+
+}
+
+/* ABOUT PAGE */
+.about-intro{
+display: flex;
+flex-direction: column;
+gap: 2em;
+padding: 2em;
+}
+.about-intro img{
+    width: 50%;
+    border-radius: 50%;
+}
+.hero-about{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.about-intro h1{
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+.about-intro p{
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.about-intro h2{
+    font-size: 1rem
+}
+.details-about{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+@media(min-width:750px){
+    .hero-about img{
+        width: 100%;
+        min-height: 350px;
+    }
+    .hero-about{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-about h1{
+        color: #151515;
+    }
+    .hero-about p{
+        font-size: 1rem;
+        color: #151515;
+    }
+    .details-about{
+        justify-content: center;
+        padding: 2em;
+    }
 }
