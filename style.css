@@ -105,6 +105,9 @@ main{
     object-fit: cover;
     border-radius: 3px;
 }
+.article-listing div{
+    margin-bottom: 1em;
+}
 .b1 {
     grid-area: b1;
 }
@@ -148,5 +151,40 @@ footer .Copyright{
 }
 
 @media(min-width:700px){
-
+    .intro span{
+        font-size: 1rem;
+    }
+    .intro h1{
+        font-size: 2.5rem;
+    }
+    .intro p{
+        font-size: 1rem;
+        width: 40%;
+        line-height: 1.5;
+    }
+    .intro{
+        min-height:600px;
+        background: url("images/blog0\(wider\).png");
+        background-size:cover;
+        background-position: bottom;
+    }
+    .article-listing img{
+        object-fit: cover;
+        height: 270px;
+        margin: 0px;
+        
+    }
+    .article-listing{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "b1 b2 b3"
+        "b4 b5 b6"
+        ;
+        gap: 1em;
+        padding: 2em;
+        overflow-x: hidden;
+    }
+    .article-listing div{
+        justify-content: flex-start;
+    }
 }
