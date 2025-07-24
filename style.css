@@ -45,10 +45,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:  1.5em 0.75em;
+    margin:  1.5em 0.5em;
 }
 header span{
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     color: #0E0E0E;
     font-weight: bold;
     margin-right: 0.5em;
@@ -56,6 +56,7 @@ header span{
 .flex-header{
     display: flex;
     align-items: center;
+    flex: 0 0 40%;
     gap: 2px;
 }
 header a{
@@ -66,9 +67,13 @@ header a{
     margin-left: 0.5em;
 }
 header img{
-    width:1.5em;
-    height: 1.5em;
+    width: 1.2em;
+    height: 1.2em;
     margin-left:1em;
+}
+header.pages{
+    width: 100%;
+    flex: 0 0 60%;
 }
 /* main sections */
 main{
